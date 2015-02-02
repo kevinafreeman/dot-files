@@ -29,6 +29,11 @@ alias cp='cp -r'
 alias repos='cd ~/Repos'
 alias gs='git status'
 alias gp='git push'
+alias ins='sudo apt-get install'
+alias goamulet='cd ~/Repos/project-amulet'
+alias godevenv='cd ~/Repos/project-amulet/devEnv'
+alias dins='sudo dpkg -i'
+alias aptupgrade='sudo apt-get dist-upgrade -y'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
