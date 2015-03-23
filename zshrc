@@ -73,3 +73,5 @@ export PATH=$PATH:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/
 
 #source /opt/tinyos-main/tinyos.env
 #export MOTECOM=serial@/dev/ttyUSB0:tmote 
+export AMULET_ROOT=/home/kevin/Repos/project-amulet/
+export QPC_ROOT=/home/kevin/Repos/lib-qpc
