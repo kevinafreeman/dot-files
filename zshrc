@@ -71,7 +71,9 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=$PATH:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/ti-mspgcc/bin
 
-#source /opt/tinyos-main/tinyos.env
+source /opt/tinyos-main/tinyos.env
 #export MOTECOM=serial@/dev/ttyUSB0:tmote 
 export AMULET_ROOT=/home/kevin/Repos/project-amulet/
 export QPC_ROOT=/home/kevin/Repos/lib-qpc
+alias msp430-gcc='msp430-elf-gcc'
+export TERM=xterm-256color
