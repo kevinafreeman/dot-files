@@ -41,7 +41,7 @@ RPROMPT='$(vi_mode_prompt_info) %F{$FG[012]%D{%e.%b.%Y %H:%M %p}%f%{$reset_color
 PROMPT2='{%_}  '
 
 ### Selection prompt
-PROMPT3='{ â€¦ }  '
+PROMPT3='{ €¦ }  '
 
 ### So far I don't have any use for 'setopt xtrace', so I don't use this prompt
 #PROMPT4=''
