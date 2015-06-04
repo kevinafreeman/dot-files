@@ -9,7 +9,7 @@ precmd () {
 	if [[ -z $(git ls-files --other --exclude-standard 2> /dev/null) ]] {
 		zstyle ':vcs_info:*' formats '%F{cyan}[%b%c%u%f%F{cyan}]%f'
 	} else {
-		zstyle ':vcs_info:*' formats '%F{cyan}[%b%c%u%f%F{red}â—%f%F{cyan}]%f'
+		zstyle ':vcs_info:*' formats '%F{cyan}[%b%c%u%f%F{red}:—%f%F{cyan}]%f'
 	}
 
 	vcs_info
