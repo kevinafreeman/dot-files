@@ -28,12 +28,17 @@ alias cd..='cd ..'
 alias cp='cp -r'
 alias repos='cd ~/Repos'
 alias gs='git status'
-alias gp='git push'
+alias gp='git pull'
 alias ins='sudo apt-get install'
 alias goamulet='cd ~/Repos/project-amulet'
 alias godevenv='cd ~/Repos/project-amulet/devEnv'
 alias dins='sudo dpkg -i'
-alias aptupgrade='sudo apt-get dist-upgrade -y'
+alias aptupgrade='sudo apt-get upgrade -y'
+alias aptdupgrade='sudo apt-get dist-upgrade -y'
+alias aptupdate='sudo apt-get update'
+alias aptauto='sudo apt-get autoremove -y && sudo apt-get autoclean -y'
+alias aptall='aptupdate && aptupgrade && aptdupgrade'
+alias ssh='ssh -X'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -69,11 +74,11 @@ plugins=(git svn ruby gitfast mercurial debian sublime sudo)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/ti-mspgcc/bin
+export PATH=$PATH:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/ti-mspgcc/bin:/home/kevin/qm/bin
 
-source /opt/tinyos-main/tinyos.env
-#export MOTECOM=serial@/dev/ttyUSB0:tmote 
 export AMULET_ROOT=/home/kevin/Repos/project-amulet/
 export QPC_ROOT=/home/kevin/Repos/lib-qpc
 alias msp430-gcc='msp430-elf-gcc'
 export TERM=xterm-256color
+
+MOZILLA_FIVE_HOME=/usr/lib/firefox 
