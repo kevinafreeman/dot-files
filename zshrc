@@ -74,11 +74,7 @@ plugins=(git svn ruby gitfast mercurial debian sublime sudo)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/ti-mspgcc/bin:/home/kevin/qm/bin
+export PATH=$PATH:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/ti-mspgcc/bin:~/qm/bin
 
-export AMULET_ROOT=/home/kevin/Repos/project-amulet/
-export QPC_ROOT=/home/kevin/Repos/lib-qpc
 alias msp430-gcc='msp430-elf-gcc'
 export TERM=xterm-256color
-
-MOZILLA_FIVE_HOME=/usr/lib/firefox 
