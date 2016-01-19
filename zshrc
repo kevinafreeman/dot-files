@@ -39,12 +39,13 @@ alias aptupdate='sudo apt-get update'
 alias aptauto='sudo apt-get autoremove -y && sudo apt-get autoclean -y'
 alias aptall='aptupdate && aptupgrade && aptdupgrade'
 alias ssh='ssh -X'
+alias aptremove='sudo apt-get remove'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
 # Uncomment this to disable bi-weekly auto-update checks
- DISABLE_AUTO_UPDATE="true"
+ DISABLE_AUTO_UPDATE="false"
 
 # Uncomment to change how often before auto-updates occur? (in days)
 # export UPDATE_ZSH_DAYS=13
@@ -69,12 +70,21 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git svn ruby gitfast mercurial debian sublime sudo)
+plugins=(svn ruby gitfast mercurial debian sublime sudo colorize)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/ti-mspgcc/bin:~/qm/bin
+export PATH=$PATH:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/ti-mspgcc/bin:~/qm/bin:~/bin
 
 alias msp430-gcc='msp430-elf-gcc'
 export TERM=xterm-256color
+
+export MOZILLA_FIVE_HOME="/home/kevin/xulrunner"
+export LD_LIBRARY_PATH="$MOZILLA_FIVE_HOME:$LD_LIBRARY_PATH"
+
+PATH="/home/kevin/perl5/bin${PATH+:}${PATH}"; export PATH;
+PERL5LIB="/home/kevin/perl5/lib/perl5${PERL5LIB+:}${PERL5LIB}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/kevin/perl5${PERL_LOCAL_LIB_ROOT+:}${PERL_LOCAL_LIB_ROOT}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/kevin/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/kevin/perl5"; export PERL_MM_OPT;
