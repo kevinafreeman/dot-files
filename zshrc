@@ -30,8 +30,6 @@ alias repos='cd ~/Repos'
 alias gs='git status'
 alias gp='git pull'
 alias ins='sudo apt-get install'
-alias goamulet='cd ~/Repos/project-amulet'
-alias godevenv='cd ~/Repos/project-amulet/devEnv'
 alias dins='sudo dpkg -i'
 alias aptupgrade='sudo apt-get upgrade -y'
 alias aptdupgrade='sudo apt-get dist-upgrade -y'
@@ -75,9 +73,8 @@ plugins=(svn ruby gitfast mercurial debian sublime sudo colorize)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/ti-mspgcc/bin:~/qm/bin:~/bin
+export PATH=$PATH:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 
-alias msp430-gcc='msp430-elf-gcc'
 export TERM=xterm-256color
 
 export MOZILLA_FIVE_HOME="/home/kevin/xulrunner"
